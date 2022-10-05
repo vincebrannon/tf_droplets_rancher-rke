@@ -4,7 +4,7 @@ output "rancher_url" {
 }
 
 output "rke-custom_cluster_command" {
-  value       = rancher2_cluster.rke-custom.cluster_registration_token.0.insecure_node_command
+  value       = rancher2_cluster.rke-custom.cluster_registration_token.0.node_command
   description = "Docker command used to add a node to the rke-custom downstream cluster"
 }
 
