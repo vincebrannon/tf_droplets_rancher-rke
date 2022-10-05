@@ -1,0 +1,88 @@
+# DigitalOcean API token
+do_token = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+
+# Resources will be prefixed with this to avoid clashing names
+prefix = "tochange"
+
+# Droplet sizes
+size = "s-4vcpu-8gb"
+
+# Image OS of hosts
+# doctl compute image list-distribution | grep ubuntu
+nodes_image = "ubuntu-20-04-x64"
+
+# Region where server should be created
+# https://docs.digitalocean.com/products/platform/availability-matrix/#available-datacenters
+region_server = "fra1"
+
+# Docker version to install
+# https://github.com/rancher/install-docker/tree/master/dist
+docker_version = "20.10"
+
+#####
+#####
+
+# Number of rancher droplets with ALL roles
+rancher_all_roles_nodes = "3"
+
+# Number of rancher droplets with ETCD roles only
+rancher_etcd_nodes = "0"
+
+# Number of rancher droplets with CP roles only
+rancher_cp_nodes = "0"
+
+# Number of rancher droplets with WORKER roles only
+rancher_worker_nodes = "0"
+
+# Set the local Rancher cluster kubernetes version
+# ./show-rancher-k8s-slugs.sh
+rancher_kubernetes_version = "v1.22.11-rancher1-1"
+
+# Set Cert-Manager version
+cert_manager_version = "1.7.1"
+
+# Set the Rancher version
+rancher_version = "2.6.8"
+
+# Set the admin password
+rancher_password = "adminadminadmin"
+
+# Set to true to define custom RKE settings in a "rancher-cluster.yaml" file
+use_cluster_yaml = false
+
+####
+####
+
+# Number of RKE downstream cluster droplets with ALL roles
+downstream_all_roles_nodes = "1"
+
+# Number of RKE downstream cluster droplets with ETCD roles only
+downstream_etcd_nodes = "0"
+
+# Number of RKE downstream cluster droplets with CP roles only
+downstream_cp_nodes = "0"
+
+# Number of RKE downstream cluster droplets with WORKER roles only
+downstream_worker_nodes = "0"
+
+# Set the downstream cluster Kubernetes version
+# ./show-rancher-k8s-slugs.sh
+downstream_kubernetes_version = "v1.22.11-rancher1-1"
+
+####
+####
+
+# Number of RKE downstream cluster droplets with ALL roles
+rke2_all_roles_nodes = "1"
+
+# Number of RKE downstream cluster droplets with ETCD roles only
+rke2_etcd_nodes = "0"
+
+# Number of RKE downstream cluster droplets with CP roles only
+rke2_cp_nodes = "0"
+
+# Number of RKE downstream cluster droplets with WORKER roles only
+rke2_worker_nodes = "0"
+
+# Set the RKE2 downstream cluster Kubernetes version
+ke2_kubernetes_version = "v1.22.15+rke2r1"
