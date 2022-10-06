@@ -52,6 +52,7 @@ use_cluster_yaml = false
 
 ####
 ####
+#Downstream RKE cluster
 
 # Number of RKE downstream cluster droplets with ALL roles
 downstream_all_roles_nodes = "1"
@@ -71,6 +72,8 @@ downstream_kubernetes_version = "v1.22.11-rancher1-1"
 
 ####
 ####
+
+#Downstream RKE2 cluster
 
 # Number of RKE2 downstream cluster droplets with ALL roles
 rke2_all_roles_nodes = "1"
