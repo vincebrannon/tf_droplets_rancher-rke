@@ -72,16 +72,16 @@ downstream_kubernetes_version = "v1.22.11-rancher1-1"
 ####
 ####
 
-# Number of RKE downstream cluster droplets with ALL roles
+# Number of RKE2 downstream cluster droplets with ALL roles
 rke2_all_roles_nodes = "1"
 
-# Number of RKE downstream cluster droplets with ETCD roles only
+# Number of RKE2 downstream cluster droplets with ETCD roles only
 rke2_etcd_nodes = "0"
 
-# Number of RKE downstream cluster droplets with CP roles only
+# Number of RKE2 downstream cluster droplets with CP roles only
 rke2_cp_nodes = "0"
 
-# Number of RKE downstream cluster droplets with WORKER roles only
+# Number of RKE2 downstream cluster droplets with WORKER roles only
 rke2_worker_nodes = "0"
 
 # Set the RKE2 downstream cluster Kubernetes version
