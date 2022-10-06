@@ -85,4 +85,4 @@ rke2_cp_nodes = "0"
 rke2_worker_nodes = "0"
 
 # Set the RKE2 downstream cluster Kubernetes version
-ke2_kubernetes_version = "v1.22.15+rke2r1"
+rke2_kubernetes_version = "v1.22.15+rke2r1"
